@@ -1,5 +1,8 @@
 #include "triangle.h"
 
+#include "segment.h"
+#include "line.h"
+
 Triangle::Triangle(Point _vertextA, Point _vertextB, Point _vertextC) :
 	vertexA(_vertextA),
 	vertexB(_vertextB),
@@ -22,6 +25,9 @@ Point Triangle::getVertexC() const
 
 Point Triangle::calcMedianIntersectionPoint()
 {
-	// TODO: implement
-	return {};
+	Segment sideAB(vertexA, vertexB);
+	Segment sideAC(vertexA, vertexC);
+	Line medianC(vertexC, sideAB.calcMiddlePoint());
+	Line mdeianB(vertexB, sideAC.calcMiddlePoint());
+	return *calcIntersectionPoint(mdeianB, medianC);
 }

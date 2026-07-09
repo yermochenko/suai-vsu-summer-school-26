@@ -24,12 +24,24 @@
     <ClCompile Include="geometry\triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="geometry\line.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="geometry\segment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="geometry\point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="geometry\triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="geometry\segment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

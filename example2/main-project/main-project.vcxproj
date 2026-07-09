@@ -139,12 +139,16 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="geometry\line.cpp" />
     <ClCompile Include="geometry\point.cpp" />
+    <ClCompile Include="geometry\segment.cpp" />
     <ClCompile Include="geometry\triangle.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="geometry\line.h" />
     <ClInclude Include="geometry\point.h" />
+    <ClInclude Include="geometry\segment.h" />
     <ClInclude Include="geometry\triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
